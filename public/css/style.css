@@ -1,0 +1,196 @@
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-Bold.eot');
+    src: url('../fonts/CeraPro-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/CeraPro-Bold.woff2') format('woff2'), url('../fonts/CeraPro-Bold.woff') format('woff'), url('../fonts/CeraPro-Bold.ttf') format('truetype'), url('../fonts/CeraPro-Bold.svg#CeraPro-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('C../fonts/eraPro-Thin.eot');
+    src: url('../fonts/CeraPro-Thin.eot?#iefix') format('embedded-opentype'), url('../fonts/CeraPro-Thin.woff2') format('woff2'), url('../fonts/CeraPro-Thin.woff') format('woff'), url('../fonts/CeraPro-Thin.ttf') format('truetype'), url('../fonts/CeraPro-Thin.svg#CeraPro-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-Regular.eot');
+    src: url('../fonts/CeraPro-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/CeraPro-Regular.woff2') format('woff2'), url('../fonts/CeraPro-Regular.woff') format('woff'), url('../fonts/CeraPro-Regular.ttf') format('truetype'), url('../fonts/CeraPro-Regular.svg#CeraPro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.uk-link:hover,
+a:hover {
+    text-decoration: none;
+}
+
+.uk-navbar-nav>li>a {
+    font-family: 'Cera Pro', sans-serif;
+    font-weight: normal;
+    color: #030916;
+    text-transform: capitalize;
+    font-size: 90%;
+}
+
+.uk-navbar-item {
+    padding-left: 0;
+}
+
+.uk-logo {
+    font-family: 'Cera Pro', sans-serif;
+    color: #030916;
+    font-weight: 700;
+}
+
+.uk-logo span {
+    font-weight: normal;
+}
+
+.uk-icon-link {
+    color: #030916;
+}
+
+html {
+    font-size: 100%;
+}
+
+.embedded_image[data-layout="wide"] img {
+    max-width: 1024px;
+}
+
+.embedded_image img {
+    max-width: 100%;
+    opacity: 0.7;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+}
+
+
+/*16px*/
+
+body {
+    font-family: 'Cera Pro', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.65;
+    color: #030916;
+}
+
+p {
+    margin-bottom: 1.15rem;
+}
+
+h1,
+h3,
+h4,
+h5 {
+    margin: 2.75rem 0 1.05rem;
+    font-family: 'Cera Pro', sans-serif;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 3.052em;
+}
+
+h2 {
+    margin: 1.05rem 0 1.05rem;
+    font-size: 2.441em;
+    font-family: 'Cera Pro', sans-serif;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+h3 {
+    font-size: 1.953em;
+}
+
+h4 {
+    font-size: 1.563em;
+}
+
+h5 {
+    font-size: 1.25em;
+}
+
+small,
+.text_small {
+    font-size: 0.8em;
+    font-weight: 100;
+}
+
+blockquote {
+    font-size: 1.953em;
+}
+
+.hero {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.hero .social-icons {
+    line-height: 2em;
+}
+
+.hero .uk-iconnav>*>a {
+    color: #030916;
+}
+
+.hero .uk-iconnav>*>a:hover,
+#thoughts h2 a:hover {
+    color: #1e87f0;
+}
+
+#thoughts h2 a {
+    color: #030916;
+}
+
+.wrapper {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.post-excerpt {
+    cursor: pointer;
+}
+
+.post-header {
+    display: flex;
+}
+
+.post-header::after {
+    filter: brightness(0.2);
+}
+
+.flex-post-title {
+    align-self: flex-end;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) {
+    .wrapper {
+        width: 90%;
+    }
+    body {
+        font-size: 16px;
+    }
+    h1 {
+        font-size: 1.953em;
+    }
+    h2 {
+        font-size: 1.563em;
+    }
+    h3 {
+        font-size: 1.25em;
+    }
+}

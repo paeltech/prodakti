@@ -12,6 +12,7 @@
 
     </head>
     <body>
+        @include('partials.nav')
         <div class="post-header" style="background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ $post->featured_image }}) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; width: 100%; height: 55vh;">
             <div class="wrapper flex-post-title uk-light">
                 <h2>{{ $post->title }}</h2>

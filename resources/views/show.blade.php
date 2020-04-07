@@ -15,8 +15,10 @@
         @include('partials.nav')
         <div class="post-header" style="background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ $post->featured_image }}) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; width: 100%; height: 55vh;">
             <div class="wrapper flex-post-title uk-light">
-                <h2>{{ $post->title }}</h2>
-                <div class="uk-margin-bottom"><img class="uk-border-circle uk-margin-right" src="{{ $post->author->avatar }}" width = "40" height = "40" alt="{{ $post->author->name }} avatar">  By <b>&nbsp; {{ $post->author->name }}</b>, <b>&nbsp; {{ $post->publish_date->diffForHumans() }}</b></div>
+                <h2>{{ $post->title }}</h2> 
+                <div class="uk-margin-bottom"><img class="uk-border-circle uk-margin-right" src="{{ $post->author->avatar }}" width = "40" height = "40" alt="{{ $post->author->name }} avatar">  By <b>&nbsp; {{ $post->author->name }}</b>, <b>&nbsp; {{ $post->publish_date->diffForHumans() }}</b>
+                    <span class="uk-align-right">{{ read_time((string)$post) }}</span>
+                </div>
             </div>
         </div>
         <div class="uk-section">

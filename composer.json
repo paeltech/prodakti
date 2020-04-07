@@ -12,6 +12,7 @@
         "fideloper/proxy": "^4.0",
         "laravel/framework": "^6.2",
         "laravel/tinker": "^2.0",
+        "mtownsend/read-time": "^1.1",
         "writingink/wink": "^0.1.0",
         "yajra/laravel-disqus": "^1.2"
     },

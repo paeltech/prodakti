@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Wink\WinkPost;
 use Illuminate\Http\Request;
 
+use Mtownsend\ReadTime\ReadTime;
+
 class blogController extends Controller
 {
     /**
@@ -54,6 +56,7 @@ class blogController extends Controller
     public function show($slug)
     {
         $post = WinkPost::live()->whereSlug($slug)->firstOrFail();
+
         return view('show',[
             'post' => $post,
         ]);

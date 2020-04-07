@@ -44,13 +44,22 @@
             <div id="thoughts" class="uk-container wrapper">
                 @foreach ($posts as $post)
                     <div  uk-scrollspy-class="uk-animation-slide-bottom" class="uk-margin-large-bottom post-excerpt">
-                        <div class="uk-text-small"><img class="uk-border-circle uk-margin-right" src="{{ $post->author->avatar }}" width = "30" height = "30" alt="{{ $post->author->name }} avatar">  By <b>&nbsp;&nbsp; {{ $post->author->name }} </b>, <b>&nbsp; {{ $post->publish_date->diffForHumans() }}</b></div>
+                        <div class="uk-text-small">
+                            <img class="uk-border-circle uk-margin-right" src="{{ $post->author->avatar }}" width = "30" height = "30" alt="{{ $post->author->name }} avatar">  By <b>&nbsp;&nbsp; {{ $post->author->name }} </b>, <b>&nbsp; {{ $post->publish_date->diffForHumans() }}</b>
+                             | <span>{{ read_time((string)$post) }}</span>
+                            <span class="uk-align-right">
+                                @foreach ($post->tags as $tag)
+                                    <span class="uk-label">{{ $tag->name }}</span>
+                                @endforeach
+                            </span>
+                        </div>
                         <h2><a href="{{ url($post->slug) }}">{{ $post->title }}</a></h2>
                         <p>{{ $post->excerpt }}</p>
                         <p class="uk-animation-toggle" tabindex="0"><a href="{{ url($post->slug) }}">Read more <span class="uk-animation-slide-left" uk-icon="icon: arrow-right;"></span></a></p>
                     </div>
                 @endforeach
             </div>
+        
         </div>        
 
         <!-- UIkit JS -->

@@ -53,6 +53,10 @@ a:hover {
     color: #030916;
 }
 
+.uk-label {
+    background-color: #b2bec3;
+}
+
 html {
     font-size: 100%;
 }

@@ -46,7 +46,7 @@
                     <div  uk-scrollspy-class="uk-animation-slide-bottom" class="uk-margin-large-bottom post-excerpt">
                         <div class="uk-text-small">
                             <img class="uk-border-circle uk-margin-right" src="{{ $post->author->avatar }}" width = "30" height = "30" alt="{{ $post->author->name }} avatar">  By <b>&nbsp;&nbsp; {{ $post->author->name }} </b>, <b>&nbsp; {{ $post->publish_date->diffForHumans() }}</b>
-                             | <span>{{ read_time((string)$post) }}</span>
+                             | <span>{{ read_time(['content' => (string)$post, 'abbreviated' => true]) }}</span>
                             <span class="uk-align-right">
                                 @foreach ($post->tags as $tag)
                                     <span class="uk-label">{{ $tag->name }}</span>

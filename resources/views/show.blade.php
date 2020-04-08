@@ -28,7 +28,6 @@
                 <h2>{{ $post->title }}</h2> 
                 <div class="uk-margin-bottom"><img class="uk-border-circle uk-margin-right" src="{{ $post->author->avatar }}" width = "40" height = "40" alt="{{ $post->author->name }} avatar">  By <b>&nbsp; {{ $post->author->name }}</b>, <b>&nbsp; {{ $post->publish_date->diffForHumans() }}</b>
                     <span class="uk-align-right">{{ read_time(['content' => (string)$post, 'abbreviated' => true]) }}</span>
-                     {{-- | <span>{{ $counts }} views</span> --}}
                 </div>
             </div>
         </div>

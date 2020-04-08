@@ -57,11 +57,8 @@ class blogController extends Controller
     {
         $post = WinkPost::live()->whereSlug($slug)->firstOrFail();
 
-        $post->visitsCounter()->increment();
-        $counts = $post->visitsCounter()->count();
-
         return view('show',[
-            'post' => $post, 'counts'=>$counts
+            'post' => $post,
         ]);
     }
 

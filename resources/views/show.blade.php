@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-162950092-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-162950092-1');
+</script>
+
     <title>{{ $post->title }}</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,7 +28,7 @@
                 <h2>{{ $post->title }}</h2> 
                 <div class="uk-margin-bottom"><img class="uk-border-circle uk-margin-right" src="{{ $post->author->avatar }}" width = "40" height = "40" alt="{{ $post->author->name }} avatar">  By <b>&nbsp; {{ $post->author->name }}</b>, <b>&nbsp; {{ $post->publish_date->diffForHumans() }}</b>
                     <span class="uk-align-right">{{ read_time(['content' => (string)$post, 'abbreviated' => true]) }}</span>
-                     | <span>{{ $counts }} views</span>
+                     {{-- | <span>{{ $counts }} views</span> --}}
                 </div>
             </div>
         </div>

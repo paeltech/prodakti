@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-162950092-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-162950092-1');
+</script>
+
         <title>Seed.life</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -46,7 +57,7 @@
                     <div  uk-scrollspy-class="uk-animation-slide-bottom" class="uk-margin-large-bottom post-excerpt">
                         <div class="uk-text-small">
                             <img class="uk-border-circle uk-margin-right" src="{{ $post->author->avatar }}" width = "30" height = "30" alt="{{ $post->author->name }} avatar">  By <b>&nbsp;&nbsp; {{ $post->author->name }} </b>, <b>&nbsp; {{ $post->publish_date->diffForHumans() }}</b>
-                        | <span>{{ read_time(['content' => (string)$post, 'abbreviated' => true]) }}</span>, <span>{{ $post->visitsCounter()->count() }} views</span>
+                        | <span>{{ read_time(['content' => (string)$post, 'abbreviated' => true]) }}</span>
                             <span class="uk-align-right">
                                 @foreach ($post->tags as $tag)
                                     <span class="uk-label">{{ $tag->name }}</span>

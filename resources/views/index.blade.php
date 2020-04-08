@@ -58,7 +58,7 @@
                         <div class="uk-text-small">
                             <img class="uk-border-circle uk-margin-right" src="{{ $post->author->avatar }}" width = "30" height = "30" alt="{{ $post->author->name }} avatar">  By <b>&nbsp;&nbsp; {{ $post->author->name }} </b>, <b>&nbsp; {{ $post->publish_date->diffForHumans() }}</b>
                         | <span>{{ read_time(['content' => (string)$post, 'abbreviated' => true]) }}</span>
-                            <span class="uk-align-right">
+                            <span class="uk-align-right" style="margin-bottom: 0;">
                                 @foreach ($post->tags as $tag)
                                     <span class="uk-label">{{ $tag->name }}</span>
                                 @endforeach

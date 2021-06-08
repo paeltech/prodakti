@@ -12,7 +12,7 @@
   gtag('config', 'UA-162950092-1');
 </script>
 
-        <title>Seed.life</title>
+        <title>Prodakti</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Google fonts -->
@@ -28,12 +28,9 @@
             <div class="hero uk-container" uk-scrollspy="cls:uk-animation-fade; repeat: true">
                 <div class="hero-content uk-width-2-3@m uk-width-1-1">
                     <h1 class="hw-text-bold uk-margin-large-top uk-margin-remove-top@m">
-                        “Your Mind is a Garden,
-                            Your Thoughts are the Seeds.
-                            You can grow Flowers
-                            or weeds...” 
+                        “A great product manager has the brain of an engineer, the heart of a designer, and the speech of a diplomat.” 
                     </h1>
-                    <p class="uk-text-lead">– OSHO</p>
+                    <p class="uk-text-lead">– Deep Nishar, <i>Vice President of Product at LinkedIn</i></p>
                 </div>
                 <ul class="uk-iconnav uk-iconnav-vertical uk-position-center-right uk-margin-large-right uk-visible@m social-icons">
                     <li class="uk-animation-toggle">
